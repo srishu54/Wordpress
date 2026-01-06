@@ -11,7 +11,7 @@ This project demonstrates a **production-ready WordPress deployment on Kubernete
 
 **Secrets**: Kubernetes Secrets for secure password management
 
-**Networking**: Kubernetes Services for internal communication
+**Networking**: Kubernetes Services for internal & external communication
 
 **Goal**: Showcase hands-on Kubernetes expertise in deploying stateful applications, securing credentials, and ensuring data survives pod lifecycle events.
 
