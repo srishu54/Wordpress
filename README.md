@@ -1,20 +1,21 @@
-# Kubernetes WordPress + MySQL Deployment
-## Project Description
+# WordPress on Kubernetes with Persistent MySQL Storage
+# Project Overview
 
-This project demonstrates the deployment of a two-tier web application on Kubernetes, where:
+This project demonstrates deploying a production-style WordPress application on Kubernetes, focusing on data persistence using Persistent Volumes (PV) and Persistent Volume Claims (PVC).
 
-WordPress acts as the frontend application
+The application architecture follows a real-world cloud-native pattern:
 
-MySQL acts as the backend database
+WordPress runs as the frontend application
 
-Both components run as independent Kubernetes pods
+MySQL runs as the backend database
 
-Communication happens via Kubernetes Services
+Kubernetes Services enable secure internal communication
 
-The goal of this project is to showcase containerized application deployment, service discovery, and basic DevOps practices using Kubernetes.
+Kubernetes Secrets protect sensitive credentials
 
+Persistent Storage (PV & PVC) ensures database data survives pod restarts
 
-
+🎯 Primary Goal: To clearly showcase how stateful applications like MySQL achieve data persistence in Kubernetes using PV & PVC, which is a critical real-time production requirement.
 
 
 
