@@ -1,29 +1,42 @@
 # WordPress on Kubernetes with Persistent MySQL Storage
 # Project Overview
 
-This project demonstrates deploying a production-style WordPress application on Kubernetes, focusing on data persistence using Persistent Volumes (PV) and Persistent Volume Claims (PVC).
+This project demonstrates a **production-ready WordPress deployment on Kubernetes** with a focus on **stateful workloads and data persistence**.
 
-The application architecture follows a real-world cloud-native pattern:
+**Frontend**: WordPress
 
-WordPress runs as the frontend application
+**Backend**: MySQL
 
-MySQL runs as the backend database
+**Storage**: Persistent Volumes (PV) + Persistent Volume Claims (PVC)
 
-Kubernetes Services enable secure internal communication
+**Secrets**: Kubernetes Secrets for secure password management
 
-Kubernetes Secrets protect sensitive credentials
+**Networking**: Kubernetes Services for internal communication
 
-Persistent Storage (PV & PVC) ensures database data survives pod restarts
+**Goal**: Showcase hands-on Kubernetes expertise in deploying stateful applications, securing credentials, and ensuring data survives pod lifecycle events.
 
-**Primary Goal**: To clearly showcase how stateful applications like MySQL achieve data persistence in Kubernetes using PV & PVC, which is a critical real-time production requirement.
+# Key Features
+
+Deploy WordPress as a **frontend pod** connected to a **MySQL backend pod**
+
+Use **PV & PVC** to persist MySQL database data
+
+Secure credentials with **Kubernetes Secrets**
+
+Enable internal pod-to-pod communication with **Services**
+
+Validate **data persistence** even after MySQL pod deletion/recreation
+
+Showcase **real-world Kubernetes architecture** for production apps
 
 # Future Improvements
 
-Convert MySQL to StatefulSet
+Convert MySQL to **StatefulSet**
 
-Add ConfigMaps for WordPress configuration
+Add **ConfigMaps** for WordPress configuration
 
-Implement Ingress Controller
+Implement **Ingress** Controller
 
-Add Readiness & Liveness probes
+Add **Readiness & Liveness probes**
 
+Add **GitHub Actions CI/CD pipeline**
