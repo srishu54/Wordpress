@@ -15,7 +15,7 @@ Kubernetes Secrets protect sensitive credentials
 
 Persistent Storage (PV & PVC) ensures database data survives pod restarts
 
-🎯 Primary Goal: To clearly showcase how stateful applications like MySQL achieve data persistence in Kubernetes using PV & PVC, which is a critical real-time production requirement.
+**Primary Goal**: To clearly showcase how stateful applications like MySQL achieve data persistence in Kubernetes using PV & PVC, which is a critical real-time production requirement.
 
 # Future Improvements
 
