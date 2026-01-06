@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: testpvc
+  namespace: test
+spec:
+  accessModes:
+   - ReadWriteMany
+  resources:
+   requests:
+     storage: 2Gi
